@@ -18,7 +18,7 @@ class MainWindow(tk.Tk):
         # Load Plugins
         self.Load_Plugins()
     def Load_Plugins(self):
-        # Plugins are rar archive with the .plgn extension
+        # Plugins are .zip archive with the .plgn extension
         Plugins = list(Path(self.Plugins_Directory).rglob("*.[pP][lL][gG][nN]"))
         for Plugin in Plugins:
             try:
